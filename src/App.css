@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@media print {
+  * {
+    display: none;
+  }
+}
+
+.App {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.container {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 32px;
+  height: 92vh;
+  width: fit-content;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.page {
+  position: fixed;
+  top: 20px;
+  left: 47%;
+  z-index: 100;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 8px;
+}
